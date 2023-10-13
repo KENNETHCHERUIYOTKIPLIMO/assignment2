@@ -1,7 +1,6 @@
 .container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+gap: 20px;
 }
 .t6{
     font-size: medium;
@@ -14,19 +13,36 @@
     background-color: white;
     padding: 20px; 
     border-radius: 10px; 
-    overflow: hidden;  
+    overflow: hidden; 
+    width: 400px; 
+    height: 300px;
+    align-content: center;
 }
 
 .images {
     position:absolute;
     flex: 1;
-    height: 300px; 
+    height: 3px; 
+}
+.image-section,.dec1 {
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
 }
 
-.images img {
+
+.text{
     position: absolute;
-    width: 150px;  
-    height: auto; 
+    bottom: 0;
+    left: 0;
+    padding-left: 5px;
+    margin-left: 20pt;
+    margin-bottom: 5pc;
+}
+ img {
+  
+    width: 100%;  
+    max-width: 300px;
     border-radius: 30px;
 }
 .bullet-list {
@@ -40,6 +56,11 @@
     text-shadow: 2px 2px 5px white;
     font-size: 24px;
     
+}
+.dec1{
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 .img1 {
     top: 5%; 
